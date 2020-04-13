@@ -1,0 +1,31 @@
+clear 
+echo 
+echo 'Calculate Electricity Charge' 
+echo 
+echo Enter the Name 
+read name 
+echo Enter the Meter number 
+read mno 
+echo Enter the no of units consumed
+read units
+if[$units <50]
+then
+Amount='$units\*9+25'
+echo Net Amount is Rs $Amount
+elif[$units <=100]
+Amount='$units\*12+35'
+echo Net Amount is Rs $Amount
+elif[$units>100]
+Amount='$units\*12+35'
+echo Net Amount is Rs $Amount
+echo
+echo 'Electricity Billing' 
+echo  
+echo "Name                  : $name" 
+echo "Meter Number          : $mno"
+echo "No of units           : $units"
+echo "Amount                : $Amount"
+fi
+
+
+
